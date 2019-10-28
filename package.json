@@ -3,8 +3,11 @@
   "version": "1.0.2",
   "description": "Tiny flexible template for writing Phaser games in ES6/ES2015 with Babel.",
   "main": "src/index.js",
+  "homepage": "https://khrystynaStyslo.github.io/massiveHeights/",
   "scripts": {
     "start": "gulp",
+    "build": "gulp build",
+    "deploy": "gh-pages -d dist",
     "production": "gulp --production"
   },
   "repository": {
@@ -29,6 +32,8 @@
     "yargs": "^4.6.0"
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
+    "gulp-cli": "^2.2.0",
     "phaser": "^2.4.7"
   }
 }
