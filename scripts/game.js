@@ -274,7 +274,6 @@ var Play = function (_Preload) {
 }(_Preload3.default);
 
 function handleMusic() {
-  backgroundMusic.restart();
   backgroundMusic.mute = !backgroundMusic.mute;
 }
 
