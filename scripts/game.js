@@ -654,7 +654,7 @@ var StartGame = function (_Preload) {
 			soundBtn.width = 100;
 			soundBtn.height = 100;
 
-			backgroundMusic = this.add.audio('backgroundSound', 1, true, true);
+			backgroundMusic = this.add.audio('backgroundSound', 1, true);
 			backgroundMusic.play();
 
 			this.physics.startSystem(Phaser.Physics.ARCADE);
@@ -676,7 +676,6 @@ function startPlay() {
 }
 
 function handleMusic() {
-	backgroundMusic.restart();
 	backgroundMusic.mute = !backgroundMusic.mute;
 }
 
