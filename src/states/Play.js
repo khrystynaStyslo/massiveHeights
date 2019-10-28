@@ -71,7 +71,6 @@ class Play extends Preload {
 }
 
 function handleMusic() {
-  backgroundMusic.restart();
   backgroundMusic.mute = !backgroundMusic.mute;
 }
 
