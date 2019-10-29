@@ -220,7 +220,8 @@ var Play = function (_Preload) {
   _createClass(Play, [{
     key: 'create',
     value: function create() {
-      background = this.add.sprite(0, 0, 'background');
+      this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+      background = this.add.tileSprite(0, 0, window.innerWidth, window.innerHeight, 'background');
 
       var scoreFont = { font: "30px Fredoka One", fill: "#fff", align: "center" };
       scoreIcon = this.add.sprite(window.innerWidth - 220, 0, 'score');
@@ -647,7 +648,8 @@ var StartGame = function (_Preload) {
 		value: function create() {
 			var center = { x: this.game.world.centerX, y: this.game.world.centerY };
 
-			background = this.add.sprite(0, 0, 'background');
+			this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+			background = this.add.tileSprite(0, 0, window.innerWidth, window.innerHeight, 'background');
 
 			soundBtn = this.add.button(window.innerWidth - 120, window.innerHeight - 120, 'btnSound', handleMusic, this, 2, 1, 0);
 			soundBtn.width = 100;
