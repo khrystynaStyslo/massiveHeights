@@ -21,7 +21,8 @@ var tempShiftedGem = null,
 
 class Play extends Preload {
   create() {
-    background = this.add.sprite(0,0,'background');
+    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    background = this.add.tileSprite(0,0, window.innerWidth, window.innerHeight,'background');
 
     var scoreFont = { font: "30px Fredoka One", fill: "#fff", align: "center" };
     scoreIcon = this.add.sprite(window.innerWidth - 220,0,'score');
